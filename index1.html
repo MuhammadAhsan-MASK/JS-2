@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <h1>JavaScript</h1>
+
+    <script>
+        function welcomeToKarachi() {
+            let city = prompt("Enter city name:");
+            if (city && city.toLowerCase() === "karachi") {
+                alert("Welcome to city of lights");
+            }
+        }
+
+        welcomeToKarachi();
+
+        function greetByGender() {
+            let gender = prompt("Enter your gender (male/female):");
+            if (gender && gender.toLowerCase() === "male") {
+                alert("Good Morning Sir.");
+            } else if (gender && gender.toLowerCase() === "female") {
+                alert("Good Morning Ma'am.");
+            }
+        }
+
+        greetByGender();
+
+        function trafficSignalMessage() {
+            let color = prompt("Enter the color of the road traffic signal (red/yellow/green):");
+            if (color) {
+                color = color.toLowerCase();
+                if (color === "red") {
+                    alert("Must Stop");
+                } else if (color === "yellow") {
+                    alert("Ready to move");
+                } else if (color === "green") {
+                    alert("Move now");
+                }
+            }
+        }
+
+        trafficSignalMessage();
+
+        function checkFuelLevel() {
+            let fuel = parseFloat(prompt("Enter the remaining fuel in your car (in litres):"));
+            if (!isNaN(fuel) && fuel < 0.25) {
+                alert("Please refill the fuel in your car");
+            }
+        }
+
+        checkFuelLevel();
+
+        function checkAlertMessages() {
+            var a = 4;
+            if (++a === 5) {
+                alert("given condition for variable a is true");
+            }
+
+            var b = 82;
+            if (b++ === 83) {
+                alert("given condition for variable b is true");
+            }
+
+            var c = 12;
+            if (c++ === 13) {
+                alert("condition 1 is true");
+            }
+            if (c === 13) {
+                alert("condition 2 is true");
+            }
+            if (++c < 14) {
+                alert("condition 3 is true");
+            }
+            if (c === 14) {
+                alert("condition 4 is true");
+            }
+
+            var materialCost = 20000;
+            var laborCost = 2000;
+            var totalCost = materialCost + laborCost;
+            if (totalCost === laborCost + materialCost) {
+                alert("The cost equals");
+            }
+
+            if (true) {
+                alert("True");
+            }
+            if (false) {
+                alert("False");
+            }
+
+            if ("car" < "cat") {
+                alert("car is smaller than cat");
+            }
+        }
+
+        checkAlertMessages();
+
+        function calculateGrade() {
+            let sub1 = parseFloat(prompt("Enter marks obtained in subject 1:"));
+            let sub2 = parseFloat(prompt("Enter marks obtained in subject 2:"));
+            let sub3 = parseFloat(prompt("Enter marks obtained in subject 3:"));
+            let totalMarks = parseFloat(prompt("Enter total marks:"));
+
+            if (!isNaN(sub1) && !isNaN(sub2) && !isNaN(sub3) && !isNaN(totalMarks)) {
+                let marksObtained = sub1 + sub2 + sub3;
+                let percentage = (marksObtained / totalMarks) * 100;
+                let grade, remarks;
+
+                if (percentage >= 80) {
+                    grade = "A+";
+                    remarks = "Excellent";
+                } else if (percentage >= 70) {
+                    grade = "A";
+                    remarks = "Good";
+                } else if (percentage >= 60) {
+                    grade = "B";
+                    remarks = "You need to improve";
+                } else if (percentage >= 50) {
+                    grade = "C";
+                    remarks = "You need to improve";
+                } else if (percentage >= 40) {
+                    grade = "D";
+                    remarks = "You need to improve";
+                }
+                 else {
+                    grade = "Fail";
+                    remarks = "Sorry";
+                }
+
+                let result = `
+                    <h2>Result</h2>
+                    <p>Total Marks: ${totalMarks}</p>
+                    <p>Marks Obtained: ${marksObtained}</p>
+                    <p>Percentage: ${percentage.toFixed(2)}%</p>
+                    <p>Grade: ${grade}</p>
+                    <p>Remarks: ${remarks}</p>
+                `;
+                document.write(result);
+            } else {
+                alert("Invalid input. Please enter numeric values for marks and total marks.");
+            }
+        }
+
+        calculateGrade();
+
+        function guessGame() {
+            let secretNumber = Math.floor(Math.random() * 10) + 1;
+            let guess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+            if (!isNaN(guess)) {
+                if (guess === secretNumber) {
+                    alert("Bingo! Correct answer");
+                } else if (guess === secretNumber + 1 || guess === secretNumber - 1) {
+                    alert("Close enough to the correct answer");
+                } else {
+                    alert(`Sorry, the correct answer was ${secretNumber}`);
+                }
+            } else {
+                alert("Invalid input. Please enter a number.");
+            }
+        }
+
+        guessGame();
+
+        function checkDivisibleBy3() {
+            let number = parseInt(prompt("Enter a number:"));
+            if (!isNaN(number)) {
+                if (number % 3 === 0) {
+                    alert("The number is divisible by 3");
+                } else {
+                    alert("The number is not divisible by 3");
+                }
+            } else {
+                alert("Invalid input. Please enter a number.");
+            }
+        }
+
+        checkDivisibleBy3();
+
+        function checkEvenOrOdd() {
+            let number = parseInt(prompt("Enter a number:"));
+            if (!isNaN(number)) {
+                if (number % 2 === 0) {
+                    alert("The number is even");
+                } else {
+                    alert("The number is odd");
+                }
+            } else {
+                alert("Invalid input. Please enter a number.");
+            }
+        }
+
+        checkEvenOrOdd();
+
+        function checkTemperature() {
+            let temp = parseFloat(prompt("Enter the temperature:"));
+            if (!isNaN(temp)) {
+                if (temp > 40) {
+                    alert("It is too hot outside.");
+                } else if (temp > 30) {
+                    alert("The Weather today is Normal.");
+                } else if (temp > 20) {
+                    alert("Today's Weather is cool.");
+                } else if (temp > 10) {
+                    alert("OMG! Today's weather is so Cool.");
+                }
+            } else {
+                alert("Invalid input. Please enter a valid temperature.");
+            }
+        }
+
+        checkTemperature();
+
+        function calculator() {
+            let num1 = parseFloat(prompt("Enter the first number:"));
+            let num2 = parseFloat(prompt("Enter the second number:"));
+            let operation = prompt("Enter the operation (+, -, *, /, %):");
+            let result;
+
+            if (!isNaN(num1) && !isNaN(num2) && operation) {
+                if (operation === "+") {
+                    result = num1 + num2;
+                } else if (operation === "-") {
+                    result = num1 - num2;
+                } else if (operation === "*") {
+                    result = num1 * num2;
+                } else if (operation === "/") {
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        alert("Cannot divide by zero.");
+                        return;
+                    }
+                } else if (operation === "%") {
+                    result = num1 % num2;
+                } else {
+                    alert("Invalid operation.");
+                    return;
+                }
+
+                alert(`Result: ${result}`);
+            } else {
+                alert("Invalid input. Please enter valid numbers and operation.");
+            }
+        }
+
+        calculator();
+
+    </script>
+
+</body>
+
+</html>

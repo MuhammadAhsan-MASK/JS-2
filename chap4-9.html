@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Assignments (Ch 4-9)</title>
+</head>
+<body>
+    <h1>Chapter 4: Variable Names – Legal & Illegal</h1>
+    <script>
+        
+        var a = 1, b = 2, c = 3;
+
+        
+        var name1, _index, $value, userName, camelCase;
+
+        
+        document.write("<h2>Rules for naming JS variables</h2>");
+        document.write("<p>Variable names can only contain letters, numbers, $, and _</p>");
+        document.write("<p>Variables must begin with a letter, $ or _</p>");
+        document.write("<p>Variable names are case sensitive</p>");
+        document.write("<p>Variable names should not be JS keywords</p>");
+    </script>
+
+    <h1>Chapter 5: Math Expressions</h1>
+    <script>
+        var a = 5, b = 10;
+        document.write("<p>Sum: " + (a + b) + "</p>");
+        document.write("<p>Subtraction: " + (a - b) + "</p>");
+        document.write("<p>Multiplication: " + (a * b) + "</p>");
+        document.write("<p>Division: " + (a / b) + "</p>");
+        document.write("<p>Modulus: " + (a % b) + "</p>");
+
+        var num;
+        document.write("<p>Value after declaration is: " + num + "</p>");
+        num = 5;
+        document.write("<p>Initial value: " + num + "</p>");
+        num++;
+        document.write("<p>After increment: " + num + "</p>");
+        num += 7;
+        document.write("<p>After adding 7: " + num + "</p>");
+        num--;
+        document.write("<p>After decrement: " + num + "</p>");
+        document.write("<p>Remainder when divided by 3: " + (num % 3) + "</p>");
+
+        var ticketPrice = 600;
+        document.write("<p>Total cost for 5 tickets: " + (ticketPrice * 5) + "</p>");
+
+        var number = 5;
+        for (var i = 1; i <= 10; i++) {
+            document.write(number + " x " + i + " = " + (number * i) + "<br>");
+        }
+
+        var celsius = 25;
+        var fahrenheit = (celsius * 9/5) + 32;
+        document.write("<p>" + celsius + "°C is " + fahrenheit + "°F</p>");
+        var f = 70;
+        var c = (f - 32) * 5/9;
+        document.write("<p>" + f + "°F is " + c + "°C</p>");
+
+        var price1 = 650, price2 = 100, qty1 = 3, qty2 = 7, shipping = 100;
+        var total = (price1 * qty1) + (price2 * qty2) + shipping;
+        document.write("<p>Total cost of shopping cart: " + total + "</p>");
+
+        var totalMarks = 500, marksObtained = 420;
+        var percentage = (marksObtained / totalMarks) * 100;
+        document.write("<p>Percentage: " + percentage + "%</p>");
+
+        var totalPKR = (10 * 104.80) + (25 * 28);
+        document.write("<p>Total in PKR: " + totalPKR + "</p>");
+
+        var result = ((10 + 5) * 10) / 2;
+        document.write("<p>Result of arithmetic sequence: " + result + "</p>");
+
+        var currentYear = 2025, birthYear = 2000;
+        var age1 = currentYear - birthYear;
+        document.write("<p>You are either " + age1 + " or " + (age1 - 1) + "</p>");
+
+        var radius = 20;
+        var circumference = 2 * 3.142 * radius;
+        var area = 3.142 * radius * radius;
+        document.write("<p>Circumference: " + circumference + "</p>");
+        document.write("<p>Area: " + area + "</p>");
+
+        var snack = "Chocolate", age = 25, maxAge = 80, perDay = 2;
+        var totalSnack = (maxAge - age) * 365 * perDay;
+        document.write("<p>You will need " + totalSnack + " " + snack + "s to last until age " + maxAge + "</p>");
+    </script>
+
+    <h1>Chapters 6-9: Alerts and Expressions</h1>
+    <script>
+        var a = 2, b = 1;
+        var result = --a - --b + ++b + b--;
+        document.write("<p>Result of expression: " + result + "</p>");
+
+        var name = "User";
+        alert("Hello " + name + "!");
+
+        var num = 5;
+        for (var i = 1; i <= 10; i++) {
+            document.write(num + " x " + i + " = " + (num * i) + "<br>");
+        }
+
+        var sub1 = "Math", sub2 = "English", sub3 = "Science";
+        var marks1 = 85, marks2 = 90, marks3 = 80;
+        var totalMarksEach = 100;
+        var totalObtained = marks1 + marks2 + marks3;
+        var percent = (totalObtained / 300) * 100;
+
+        document.write("<table border='1'><tr><th>Subject</th><th>Total</th><th>Obtained</th></tr>");
+        document.write("<tr><td>" + sub1 + "</td><td>100</td><td>" + marks1 + "</td></tr>");
+        document.write("<tr><td>" + sub2 + "</td><td>100</td><td>" + marks2 + "</td></tr>");
+        document.write("<tr><td>" + sub3 + "</td><td>100</td><td>" + marks3 + "</td></tr>");
+        document.write("<tr><td colspan='2'>Total</td><td>" + totalObtained + "</td></tr>");
+        document.write("<tr><td colspan='2'>Percentage</td><td>" + percent + "%</td></tr></table>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Solutions</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Assignments Solutions</h1>
+
+    <script>
+        // Chapter 4
+        document.write("<h2>Chapter 4</h2>");
+        var productCost = 3.45;
+        document.write("<p>1. Corrected statement: var productCost = 3.45; </p>"); // [cite: 100, 101, 130, 131]
+
+        var nameOfBand;
+        document.write("<p>2. camelCase: var nameOfBand; </p>"); // [cite: 101, 102, 131, 132]
+
+        var myNumber = 10;
+        document.write("<p>3. Single statement: var myNumber = 10; </p>"); // [cite: 101, 102, 131, 132]
+
+        var firstNameLastName = "JohnDoe"; // Replace with an actual name if needed
+        document.write("<p>4. camelCase name variable: var firstNameLastName = 'JohnDoe'; </p>"); // [cite: 102, 132]
+
+        document.write("<p>5. Legal variables can contain letters, digits, underscores, and dollar signs, and cannot start with a digit. Illegal variables violate these rules.</p>"); // [cite: 103, 133]
+
+        // Chapter 5
+        document.write("<h2>Chapter 5</h2>");
+        document.write("<p>1. Modulo operator, symbol: % </p>"); // [cite: 103, 133]
+
+        var num = 20 % 6;
+        document.write("<p>2. num value: " + num + "</p>"); // [cite: 104, 134]
+
+        var largeNum = 1000 * 2000;
+        document.write("<p>3. largeNum: " + largeNum + "</p>"); // [cite: 105, 135]
+
+        var variable1 = 10;
+        var variable2 = 5;
+        var result = variable1 - variable2;
+        document.write("<p>4. Subtraction: result = variable1 - variable2 (" + result + ") </p>"); // [cite: 106, 136]
+
+        var remainderValue = 25 % 4;
+        document.write("<p>5. Remainder: remainderValue = 25 % 4 (" + remainderValue + ") </p>"); // [cite: 106, 107, 136, 137]
+
+        //alert(5 * 10);
+        document.write("<p>6. Multiplication alert (in console): 50 (See browser's console) </p>"); // [cite: 108, 138]
+        console.log(5 * 10);
+
+        // Chapter 6
+        document.write("<h2>Chapter 6</h2>");
+        document.write("<p>1. Short form: x++; or ++x; </p>"); // [cite: 109, 139, 140]
+
+        document.write("<p>2. Reduce to 99: x--; or --x; </p>"); // [cite: 110, 140]
+
+        var x = 50;
+        var y = x++;
+        document.write("<p>3. y value: " + y + "</p>"); // [cite: 111, 141]
+
+        var y = 50;
+        var z = --y;
+        document.write("<p>4. z value: " + z + "</p>"); // [cite: 111, 112, 141, 142]
+
+        var num6 = 10;
+        var newNum = num6--;
+        document.write("<p>5. Decrement and assign: newNum = num--; (newNum: " + newNum + ", num: " + num6 + ") </p>"); // [cite: 113, 143]
+
+        var originalValue = 5;
+        var newValue = originalValue++;
+        document.write("<p>6. Add 1 and assign: newValue = originalValue++; (newValue: " + newValue + ", originalValue: " + originalValue + ") </p>"); // [cite: 114, 144]
+
+        var myVar = 20;
+        myVar++;
+        //alert(myVar);
+        document.write("<p>7. Increment alert (in console): 21 (See browser's console) </p>"); // [cite: 115, 116, 145, 146]
+        console.log(myVar);
+
+        // Chapter 7
+        document.write("<h2>Chapter 7</h2>");
+        var calculatedNum7_1 = 2 + (2 * 6);
+        document.write("<p>1. calculatedNum = 2 + (2 * 6); Value: " + calculatedNum7_1 + "</p>"); // [cite: 116, 117, 146, 147]
+
+        var calculatedNum7_2 = (2 + 2) * 6;
+        document.write("<p>2. calculatedNum = (2 + 2) * 6; Value: " + calculatedNum7_2 + "</p>"); // [cite: 117, 118, 147, 148]
+
+        var calculatedNum7_3 = (2 + 2) * (4 + 2);
+        document.write("<p>3. calculatedNum = (2 + 2) * (4 + 2); Value: " + calculatedNum7_3 + "</p>"); // [cite: 118, 148, 149]
+
+        var calculatedNum7_4 = ((2 + 2) * 4) + 2;
+        document.write("<p>4. calculatedNum = ((2 + 2) * 4) + 2; Value: " + calculatedNum7_4 + "</p>"); // [cite: 119, 120, 149, 150]
+
+        var cost = (2 + 2) * (4 + 10);
+        document.write("<p>5. cost = (2 + 2) * (4 + 10); Value: " + cost + "</p>"); // [cite: 121, 151]
+
+        var units = 2 + (2 * 4) + 10;
+        document.write("<p>6. units = 2 + (2 * 4) + 10; Value: " + units + "</p>"); // [cite: 121, 151]
+
+        var pressure = (4 / 2) * 4; // Or 4 / (2 * 4) for a different result, as the question is ambiguous
+        document.write("<p>7. pressure = (4 / 2) * 4; Value: " + pressure + "</p>"); // [cite: 121, 151]
+
+        // Chapter 8
+        document.write("<h2>Chapter 8</h2>");
+        var num8_1 = "2" + "2";
+        document.write("<p>1. num = '2' + '2'; Value: " + num8_1 + "</p>"); // [cite: 121, 122, 151, 152]
+
+        var message8_2 = ("Hello," + "Dolly");
+        document.write("<p>2. message = ('Hello,' + 'Dolly'); Value: " + message8_2 + "</p>"); // [cite: 122, 123, 152, 153]
+        //alert(message8_2);
+
+        //alert("33" + 3);
+        document.write("<p>3. alert('33' + 3); Alert value: 333 (See browser's alert) </p>"); // [cite: 123, 124, 153, 154]
+
+        //alert("Pakistan " + "Zindabad");
+        document.write("<p>4. alert('Pakistan ' + 'Zindabad'); Alert value: Pakistan Zindabad (See browser's alert)</p>"); // [cite: 124, 154]
+
+        var mixedValue = "Result: " + 10;
+        document.write("<p>5. mixedValue = 'Result: ' + 10; Value: " + mixedValue + "</p>"); // [cite: 125, 155]
+
+        var string1 = "Hello";
+        var string2 = " World";
+        var combinedString = string1 + string2;
+        document.write("<p>6. Concatenated strings: combinedString = string1 + string2 (" + combinedString + ") </p>"); // [cite: 125, 126, 155, 156]
+
+        // Chapter 9
+        document.write("<h2>Chapter 9</h2>");
+        var firstName = prompt("Enter first name");
+        document.write("<p>1. Prompt for first name (Result in variable firstName)</p>"); // [cite: 127, 157]
+
+        var country = prompt("Country?", "China");
+        document.write("<p>2. Prompt for country (Default 'China', Result in variable country)</p>"); // [cite: 128, 129, 158, 159]
+
+        var yourName = prompt("Enter Your Name");
+        document.write("<p>3. Corrected prompt: var yourName = prompt('Enter Your Name');</p>"); // [cite: 129, 159]
+
+        var city9_4 = prompt("Enter your city", "New York");
+        document.write("<p>4. Prompt with default: var city = prompt('Enter your city', 'New York');</p>"); // [cite: 129]
+
+        var message9_5 = "Enter your favorite color";
+        var defaultColor = "Blue";
+        var userColor = prompt(message9_5, defaultColor);
+        document.write("<p>5. Prompt with variable message and default (Result in userColor)</p>"); // [cite: 129]
+
+        var userResponse9_6 = prompt("Please enter your name", "Guest");
+        //alert("You entered: " + userResponse9_6);
+        document.write("<p>6. Prompt and alert (Alert in browser): You entered: " + userResponse9_6 + "</p>"); // [cite: 130]
+    </script>
+
+</body>
+
+</html>

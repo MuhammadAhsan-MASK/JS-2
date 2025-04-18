@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Solutions</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Assignments Solutions</h1>
+
+    <script>
+        // Chapter 10
+        document.write("<h2>Chapter 10</h2>");
+
+        var city10_1 = "Karachi";
+        if (city10_1 === "Karachi") {
+            console.log("The City OF Lights");
+        }
+        document.write("<p>1. Corrected if statement (console output): The City OF Lights (if city is Karachi)</p>"); //
+
+        var x10_2 = 5;
+        var y10_2 = 5;
+        if (x10_2 === y10_2) {
+            var z10_2 = prompt("Enter the value of z?");
+            var myZ10_2 = z10_2;
+            document.write("<p>2. If x === y, prompt for z. z value: " + myZ10_2 + "</p>");
+        } else {
+            document.write("<p>2. x is not equal to y</p>");
+        }
+
+        var zipCode10_3 = prompt("Enter your ZipCode:");
+        if (zipCode10_3 === "10010") {
+            alert("Karachi");
+        } else {
+            alert("Please write correct city");
+        }
+        document.write("<p>3. ZipCode check: (See browser's alerts)</p>"); //
+
+        var myVar10_4 = 10;
+        if (myVar10_4 === 10) {
+            myVar10_4 = 1;
+        }
+        document.write("<p>4. Value check and assignment: myVar is now 1 (if it was 10)</p>"); //
+
+        // Chapter 11
+        document.write("<h2>Chapter 11</h2>");
+
+        document.write("<p>1. Unequal check: if (variable1 !== variable2) { ... }</p>"); //
+
+        document.write("<p>2. Greater than or equal to: if (variable1 >= variable2) { ... }</p>"); //
+
+        var myVariable11_3 = 10;
+        if (myVariable11_3 !== 20) {
+            myVariable11_3 = 5;
+        }
+        document.write("<p>3. Unequal check and assignment: myVariable is now 5 (if it wasn't 20)</p>"); //
+
+        if (5 !== 10) {
+            alert("Congratulations!");
+        }
+        document.write("<p>4. Unequal numbers check: (See browser's alert - Congratulations!)</p>"); //
+
+        var yourFirstName11_5 = prompt("Enter your first name:");
+        if (yourFirstName11_5 !== "John") {
+            alert("No match");
+        }
+        document.write("<p>5. Name check: (See browser's alert - No match (if not 'John'))</p>"); //
+    </script>
+
+</body>
+
+</html>
